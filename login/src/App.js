@@ -1,11 +1,12 @@
 import Component from './Component';  
 import './App.css';
+import { CookiesProvider } from "react-cookie";
 
 function App() {
   return (
-    <div className="App">
-     <Component/>
-    </div>
+    <CookiesProvider>
+    <Component/>   
+    </CookiesProvider>
   );
 }
 
